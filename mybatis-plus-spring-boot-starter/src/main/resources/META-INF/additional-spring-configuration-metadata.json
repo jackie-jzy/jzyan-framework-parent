@@ -1,0 +1,12 @@
+{
+  "properties": [
+    {
+      "name": "mybatis.data.permission.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false,
+      "sourceType": "org.jzyan.framework.mybatisplus.config.MybatisPlusConfig"
+    }
+  ],
+  "hints": [
+  ]
+}
