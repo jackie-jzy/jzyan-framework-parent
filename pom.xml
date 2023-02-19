@@ -15,8 +15,10 @@
         <module>web-spring-boot-starter</module>
         <module>feign-spring-boot-starter</module>
         <module>registry-spring-boot-starter</module>
+        <module>dubbo-spring-boot-starter</module>
+        <module>log-spring-boot-starter</module>
+        <module>grpc-spring-boot-starter</module>
     </modules>
-
 
     <properties>
         <skipTests>true</skipTests>
@@ -89,6 +91,11 @@
                 <version>2021.0.4.0</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>2.7.8</version>
             </dependency>
             <!-- spring boot -->
             <dependency>
@@ -264,6 +271,21 @@
             <dependency>
                 <groupId>org.jzyan.framework</groupId>
                 <artifactId>feign-spring-boot-starter</artifactId>
+                <version>${jzyan.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jzyan.framework</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${jzyan.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jzyan.framework</groupId>
+                <artifactId>log-spring-boot-starter</artifactId>
+                <version>${jzyan.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jzyan.framework</groupId>
+                <artifactId>grpc-spring-boot-starter</artifactId>
                 <version>${jzyan.parent.version}</version>
             </dependency>
             <dependency>
