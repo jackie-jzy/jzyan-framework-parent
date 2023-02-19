@@ -14,6 +14,7 @@
         <module>mybatis-plus-spring-boot-starter</module>
         <module>web-spring-boot-starter</module>
         <module>feign-spring-boot-starter</module>
+        <module>registry-spring-boot-starter</module>
     </modules>
 
 
@@ -263,6 +264,11 @@
             <dependency>
                 <groupId>org.jzyan.framework</groupId>
                 <artifactId>feign-spring-boot-starter</artifactId>
+                <version>${jzyan.parent.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jzyan.framework</groupId>
+                <artifactId>registry-spring-boot-starter</artifactId>
                 <version>${jzyan.parent.version}</version>
             </dependency>
         </dependencies>
