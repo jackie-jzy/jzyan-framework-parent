@@ -13,7 +13,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @since 2023-06-06
  */
 @Data
-@ConfigurationProperties(prefix = "mybatis.data.page")
+@ConfigurationProperties(prefix = "mybatis-plus.page")
 public class PaginationInnerProperties {
     /**
      * 分页 数据库
