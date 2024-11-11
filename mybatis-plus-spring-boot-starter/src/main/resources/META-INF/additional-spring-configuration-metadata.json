@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "mybatis.data.page.dbType",
+      "name": "mybatis-plus.page.db-type",
       "type": "com.baomidou.mybatisplus.annotation.DbType",
       "sourceType": "org.jzyanframework.mybatisplus.config.properties.PaginationInnerProperties"
     }
