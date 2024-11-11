@@ -1,0 +1,7 @@
+# Project exclude paths
+/feign-spring-boot-starter/target/
+/interceptor-spring-boot-starter/target/
+/jzyan-core/target/
+/log-spring-boot-starter/target/
+/mybatis-plus-spring-boot-starter/target/
+/web-spring-boot-starter/target/
