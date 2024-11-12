@@ -8,7 +8,6 @@ import java.net.URLEncoder;
  * 对参数url字符串以utf-8编码将除字母和数字以及*字符外的都编码成%xx形式。
  *
  * @author jzyan
- * @date 2019年5月9日
  */
 public class UrlUtil {
 

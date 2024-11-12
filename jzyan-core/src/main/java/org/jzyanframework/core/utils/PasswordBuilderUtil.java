@@ -3,15 +3,9 @@ package org.jzyanframework.core.utils;
 import java.util.Random;
 
 /**
- * @ProjectName : online-shop
- * @FileName : PasswordBuilderUtil
- * @Version : 1.0
- * @Package : com.juzifenqi.onshop.utils.encrypt
- * @Description : 登录用户密码生成器
- * @Author : jzyan
- * @CreateDate : 2019/04/15 15:33
- * @ModificationHistory Who        When      What
- * --------- ---------     ---------------------------
+ * password util
+ *
+ * @author jzyan
  */
 public class PasswordBuilderUtil {
 
@@ -20,6 +14,12 @@ public class PasswordBuilderUtil {
     private PasswordBuilderUtil() {
     }
 
+    /**
+     * create
+     *
+     * @param length
+     * @return
+     */
     public static String createPassword(Integer length) {
         String result = getRandomPassword(length);
         if (result.matches(".*[a-z]{1,}.*") && result.matches(".*[A-Z]{1,}.*") && result.matches(".*[0-9]{1,}.*") && result.matches(".*[~!@#$%^&*\\.?]{1,}.*")) {
@@ -28,6 +28,12 @@ public class PasswordBuilderUtil {
         return createPassword(length);
     }
 
+    /**
+     * get password
+     *
+     * @param length
+     * @return
+     */
     public static String getRandomPassword(int length) {
         StringBuilder sb = new StringBuilder();
         Random r = new Random();

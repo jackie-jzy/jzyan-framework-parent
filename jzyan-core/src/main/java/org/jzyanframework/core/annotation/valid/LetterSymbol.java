@@ -18,7 +18,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * 注：字母+下划线 （必须以字母开头以字母结束）
  *
  * @author : jzyan
- * @date : 2020/11/27
  */
 @Target({FIELD, PARAMETER})
 @Retention(RUNTIME)

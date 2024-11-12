@@ -6,10 +6,9 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 /**
- * @Version : 1.0
- * @Description : 字典
- * @Author : jzyan
- * @CreateDate : 2020/10/29 12:05
+ * 字典基础类
+ *
+ * @author : jzyan
  */
 public class Dictionary implements Serializable {
 

@@ -8,7 +8,6 @@ import java.lang.annotation.*;
  * </p>
  *
  * @author jzyan
- * @since 2022-10-08
  */
 @Target({ElementType.ANNOTATION_TYPE, ElementType.FIELD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

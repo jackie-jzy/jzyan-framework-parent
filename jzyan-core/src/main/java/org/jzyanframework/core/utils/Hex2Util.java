@@ -4,7 +4,6 @@ package org.jzyanframework.core.utils;
  * <p>二进制转换工具类</p>
  *
  * @author jzyan
- * @version 2018/9/5
  */
 public class Hex2Util {
 

@@ -12,7 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 加解密工具类
+ * rsa 加密
+ *
+ * @author : jzyan
  */
 public final class RSAEncrypUtil {
     public static final String CHARSET = "UTF-8";
@@ -23,6 +25,9 @@ public final class RSAEncrypUtil {
     public static final String ALGORITHM_RSA_SIGN = "SHA256WithRSA";
     public static final int ALGORITHM_RSA_PRIVATE_KEY_LENGTH = 2048;
 
+    /**
+     *
+     */
     private RSAEncrypUtil() {
     }
 

@@ -18,7 +18,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * 校验手机号
  *
  * @author : jzyan
- * @date : 2020/11/25
  */
 @Target({FIELD, PARAMETER})
 @Retention(RUNTIME)

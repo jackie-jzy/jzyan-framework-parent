@@ -14,12 +14,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * <p>
- * 接口字段脱敏
- * </p>
+ * 自定义序列
  *
- * @author jzyan
- * @since 2023-02-23
+ * @author : jzyan
  */
 public class SensitiveSerializer extends JsonSerializer<String> implements ContextualSerializer {
 

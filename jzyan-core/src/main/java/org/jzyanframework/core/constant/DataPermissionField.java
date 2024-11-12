@@ -1,9 +1,7 @@
 package org.jzyanframework.core.constant;
 
 /**
- * <p>
- *
- * </p>
+ * 数据权限常量
  *
  * @author jzyan
  * @since 2022-03-15

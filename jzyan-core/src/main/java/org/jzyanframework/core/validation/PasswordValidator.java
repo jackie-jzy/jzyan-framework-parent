@@ -7,6 +7,11 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Pattern;
 
+/**
+ * 密码校验
+ *
+ * @author jzyan
+ */
 public class PasswordValidator implements ConstraintValidator<Password, String> {
 
     private static final Pattern PATTERN = Pattern.compile("^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[~!@#$%^&*.?])[A-Za-z0-9~!@#$%^&*.?]{8,20}$");

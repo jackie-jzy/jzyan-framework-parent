@@ -11,12 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <p>
- *
- * </p>
+ * yaml util
  *
  * @author jzyan
- * @since 2022-06-16
  */
 public class YamlUtils {
     private static final Logger log = LoggerFactory.getLogger(YamlUtils.class);

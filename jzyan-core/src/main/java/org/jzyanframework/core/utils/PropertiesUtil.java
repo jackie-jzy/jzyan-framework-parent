@@ -11,12 +11,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * <p>
- *
- * </p>
+ * proper util
  *
  * @author jzyan
- * @since 2022-06-16
  */
 public class PropertiesUtil {
     private static final Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);

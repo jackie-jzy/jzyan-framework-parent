@@ -3,11 +3,9 @@ package org.jzyanframework.core.enums;
 import org.jzyanframework.core.response.ResCode;
 
 /**
- * @FileName : ResCode
- * @Version : 1.0
- * @Description : 枚举了一些常用API操作码
- * @Author : jzyan
- * @CreateDate : 2019/04/17 20:47
+ * 基础返回值枚举
+ *
+ * @author : jzyan
  */
 public enum ResCodeEnum implements ResCode {
     SUCCESS("0000", "成功"),

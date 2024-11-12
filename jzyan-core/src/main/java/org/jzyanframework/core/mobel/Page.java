@@ -5,14 +5,10 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 
 /**
- * <p>
- * 分页
- * </p>
+ * 分页基础类
  *
- * @author jzyan
- * @since 2023-02-04
+ * @author : jzyan
  */
-
 public class Page implements Serializable {
 
     @ApiModelProperty("每页显示条数，默认10，最大100")
@@ -20,10 +16,20 @@ public class Page implements Serializable {
     @ApiModelProperty("当前页")
     private long current = 1;
 
+    /**
+     * get limit
+     *
+     * @return
+     */
     public long getLimit() {
         return limit;
     }
 
+    /**
+     * set limit
+     *
+     * @param limit
+     */
     public void setLimit(long limit) {
         if (limit > 100) {
             this.limit = 100;
@@ -34,10 +40,20 @@ public class Page implements Serializable {
         }
     }
 
+    /**
+     * get current
+     *
+     * @return
+     */
     public long getCurrent() {
         return current;
     }
 
+    /**
+     * set current
+     *
+     * @param current
+     */
     public void setCurrent(long current) {
         if (current < 1) {
             this.current = 1;

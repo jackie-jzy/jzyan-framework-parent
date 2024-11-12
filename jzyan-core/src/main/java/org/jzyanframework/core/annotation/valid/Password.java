@@ -18,7 +18,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * 注：校验密码 字母+数字+符号组合8-20位
  *
  * @author jzyan
- * @date 2020-09-07
  */
 
 @Target({FIELD, PARAMETER})

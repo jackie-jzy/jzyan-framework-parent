@@ -1,10 +1,9 @@
 package org.jzyanframework.core.enums;
 
 /**
- * <p>SHA加密类型</p>
+ * sha 加密
  *
- * @author licoy.cn
- * @version 2018/9/6
+ * @author : jzyan
  */
 public enum SHAEncryptTypeEnum {
 

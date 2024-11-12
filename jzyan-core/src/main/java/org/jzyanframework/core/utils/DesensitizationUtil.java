@@ -4,9 +4,9 @@ package org.jzyanframework.core.utils;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * @Title: CommonUtil
- * @Date 2020年02月13日 14:11
- * @Description: 脱敏工具类
+ * 脱敏
+ *
+ * @author : jzyan
  */
 public class DesensitizationUtil {
     private DesensitizationUtil() {

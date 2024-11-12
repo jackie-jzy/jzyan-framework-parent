@@ -21,7 +21,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  * 注:当没有指定默认值时，那么在使用此注解时，就必须输入对应的属性值
  *
  * @author jzyan
- * @date 2020-09-07
  */
 
 @Target({FIELD, PARAMETER})

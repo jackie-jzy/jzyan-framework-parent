@@ -9,7 +9,6 @@ import java.security.SecureRandom;
  * <p>DES加密处理工具类</p>
  *
  * @author jzyan
- * @version 2018/9/5
  */
 public class DESEncryptUtil {
 

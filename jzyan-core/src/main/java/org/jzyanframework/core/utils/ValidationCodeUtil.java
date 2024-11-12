@@ -10,7 +10,6 @@ import java.util.Random;
  * 生成图形验证码的工具类
  *
  * @author jzyan
- * @date 2019年5月9日
  */
 public class ValidationCodeUtil {
 

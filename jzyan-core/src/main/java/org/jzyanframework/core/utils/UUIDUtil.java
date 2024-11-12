@@ -2,6 +2,11 @@ package org.jzyanframework.core.utils;
 
 import java.util.UUID;
 
+/**
+ * uuid
+ *
+ * @author jzyan
+ */
 public class UUIDUtil {
 
     private UUIDUtil() {

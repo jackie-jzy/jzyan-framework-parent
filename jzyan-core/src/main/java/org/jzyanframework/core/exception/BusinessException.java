@@ -3,12 +3,9 @@ package org.jzyanframework.core.exception;
 import org.jzyanframework.core.response.ResCode;
 
 /**
- * <p>
  * 业务异常顶层父类
- * </p>
  *
  * @author jzyan
- * @since 2022-03-15
  */
 public class BusinessException extends RuntimeException {
 
@@ -21,6 +18,8 @@ public class BusinessException extends RuntimeException {
      * Constructs a new runtime exception with {@code null} as its
      * detail message.  The cause is not initialized, and may subsequently be
      * initialized by a call to {@link #initCause}.
+     *
+     * @param code 错误码
      */
     public BusinessException(String code) {
         this.code = code;
@@ -31,6 +30,7 @@ public class BusinessException extends RuntimeException {
      * The cause is not initialized, and may subsequently be initialized by a
      * call to {@link #initCause}.
      *
+     * @param code 错误码
      * @param message the detail message. The detail message is saved for
      *                later retrieval by the {@link #getMessage()} method.
      */
@@ -39,6 +39,11 @@ public class BusinessException extends RuntimeException {
         this.code = code;
     }
 
+    /**
+     * rescode
+     *
+     * @param resCode 错误码
+     */
     public BusinessException(ResCode resCode) {
         super(resCode.getMessage());
         this.code = resCode.getCode();
@@ -50,6 +55,7 @@ public class BusinessException extends RuntimeException {
      * {@code cause} is <i>not</i> automatically incorporated in
      * this runtime exception's detail message.
      *
+     * @param code 错误码
      * @param message the detail message (which is saved for later retrieval
      *                by the {@link #getMessage()} method).
      * @param cause   the cause (which is saved for later retrieval by the
@@ -67,9 +73,9 @@ public class BusinessException extends RuntimeException {
      * Constructs a new runtime exception with the specified cause and a
      * detail message of <tt>(cause==null ? null : cause.toString())</tt>
      * (which typically contains the class and detail message of
-     * <tt>cause</tt>).  This constructor is useful for runtime exceptions
      * that are little more than wrappers for other throwables.
      *
+     * @param code 错误码
      * @param cause the cause (which is saved for later retrieval by the
      *              {@link #getCause()} method).  (A <tt>null</tt> value is
      *              permitted, and indicates that the cause is nonexistent or
@@ -81,6 +87,11 @@ public class BusinessException extends RuntimeException {
         this.code = code;
     }
 
+    /**
+     * return code
+     *
+     * @return
+     */
     public String getCode() {
         return code;
     }

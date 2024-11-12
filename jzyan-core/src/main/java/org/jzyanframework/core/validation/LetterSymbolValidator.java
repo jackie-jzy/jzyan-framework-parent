@@ -7,6 +7,11 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.regex.Pattern;
 
+/**
+ * 自定义校验
+ *
+ * @author : jzyan
+ */
 public class LetterSymbolValidator implements ConstraintValidator<LetterSymbol, String> {
 
     private static final Pattern PATTERN = Pattern.compile("^[A-Za-z][A-Za-z_]+[A-Za-z]$");

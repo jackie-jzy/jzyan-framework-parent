@@ -5,12 +5,9 @@ import com.google.gson.FieldAttributes;
 import org.jzyanframework.core.annotation.IgnoreField;
 
 /**
- * <p>
  * gson 自定排除策略
- * </p>
  *
  * @author jzyan
- * @since 2022-10-08
  */
 public class IgnoreFieldAnnotationExclusionStrategy implements ExclusionStrategy {
 

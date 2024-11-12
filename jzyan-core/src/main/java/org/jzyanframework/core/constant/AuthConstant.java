@@ -1,11 +1,9 @@
 package org.jzyanframework.core.constant;
 
 /**
- * @FileName : AuthConstant
- * @Version : 1.0
- * @Description :
- * @Author : jzyan
- * @CreateDate : 2020/11/23 18:38
+ * 认证常量
+ *
+ * @author jzyan
  */
 public class AuthConstant {
 
@@ -38,11 +36,29 @@ public class AuthConstant {
      */
     public static final String USER_ROOT = "User-Root";
 
+    /**
+     * redis key
+     */
     public static final String AUTH_RESOURCE_ROLES_MAP = "AUTH:RESOURCE_ROLES_MAP";
+    /**
+     * redis key
+     */
     public static final String AUTH_TOKEN = "AUTH:TOKEN:";
+    /**
+     * redis key
+     */
     public static final String AUTH_CODE = "AUTH:CODE:";
+    /**
+     * redis key
+     */
     public static final String AUTH_CODE_IMAGE = "AUTH:CODE:IMAGE:";
+    /**
+     * redis key
+     */
     public static final String AUTH_CODE_MOBILE = "AUTH:CODE:MOBILE:";
+    /**
+     * redis key
+     */
     public static final String AUTH_CODE_MOBILE_NUM = "AUTH:CODE:MOBILE:NUM:";
 
 }

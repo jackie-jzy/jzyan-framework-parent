@@ -5,8 +5,35 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jzyan.framework</groupId>
     <artifactId>jzyan-framework-parent</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+
+    <name>jzyan-framework-parent</name>
+    <url>https://github.com/jackie-jzy/jzyan-framework-parent.git</url>
+    <description>jzyan-framework-parent</description>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>jzyan</id>
+            <name>jzyan</name>
+            <email>misterjzy@gmail.com</email>
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+            </roles>
+        </developer>
+    </developers>
+    <scm>
+        <connection>https://github.com/jackie-jzy/jzyan-framework-parent.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:jackie-jzy/jzyan-framework-parent.git</developerConnection>
+        <url>https://github.com/jackie-jzy/jzyan-framework-parent.git</url>
+    </scm>
 
     <modules>
         <module>jzyan-core</module>
@@ -20,7 +47,8 @@
     <properties>
         <skipTests>true</skipTests>
         <java.version>1.8</java.version>
-        <jzyan.parent.version>1.0.0-SNAPSHOT</jzyan.parent.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jzyan.parent.version>1.0.0</jzyan.parent.version>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <io.grpc.version>1.42.2</io.grpc.version>
@@ -332,6 +360,17 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -407,6 +446,46 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.5.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>ossrh</publishingServerId>
+                    <checksums>required</checksums>
+                    <deploymentName>jzyan-framework-parent</deploymentName>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

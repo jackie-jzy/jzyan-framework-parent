@@ -8,12 +8,9 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 /**
- * @FileName : TwoReservedBigDecimalSerialize
- * @Version : 1.0
- * @Description : 自定义 BigDecimal处理 保留两位小数
  * 使用示例 @JsonSerialize(using = TwoReservedBigDecimalSerialize.class)
- * @Author : jzyan
- * @CreateDate : 2020/04/10 14:28
+ *
+ * @author : jzyan
  */
 public class TwoReservedBigDecimalSerialize extends JsonSerializer<BigDecimal> {
     /**

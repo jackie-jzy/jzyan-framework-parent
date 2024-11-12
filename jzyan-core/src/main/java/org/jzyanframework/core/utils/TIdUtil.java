@@ -4,6 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * TID
+ *
+ * @author : jzyan
+ */
 public class TIdUtil {
     private TIdUtil() {
     }

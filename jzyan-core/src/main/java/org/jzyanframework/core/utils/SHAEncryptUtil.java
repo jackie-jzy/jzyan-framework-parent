@@ -10,7 +10,6 @@ import java.security.NoSuchAlgorithmException;
  * <p>SHA加密工具类</p>
  *
  * @author jzyan
- * @version 2018/9/5
  */
 public class SHAEncryptUtil {
 

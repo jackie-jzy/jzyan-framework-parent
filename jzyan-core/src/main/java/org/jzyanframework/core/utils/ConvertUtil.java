@@ -14,8 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author
- * @date 2020/12/23 15:31
+ * 属性转换
+ *
+ * @author jzyan
  */
 @Slf4j
 public class ConvertUtil {

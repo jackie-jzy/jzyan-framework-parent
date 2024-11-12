@@ -6,7 +6,6 @@ import java.security.MessageDigest;
  * 报文摘要工具类
  *
  * @author jzyan
- * @date 2019年5月9日
  */
 public class MD5Util {
 
